@@ -1,0 +1,19 @@
+h1 {
+  color: #ff8542;
+  font-size: 36px;
+  font-family: roboto;
+}
+.todos-container {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pg-bg {
+  background-color: #ffc2a0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
