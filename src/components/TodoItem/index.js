@@ -3,12 +3,13 @@ import {Component} from 'react'
 
 class TodoItem extends Component {
   render() {
-    const {title} = this.item
+    const {item} = this.props
+    const {title} = item
     return (
       <li>
         <div className="todoContainer">
           <p>{title}</p>
-          <button>Delete</button>
+          <button type="button">Delete</button>
         </div>
       </li>
     )
