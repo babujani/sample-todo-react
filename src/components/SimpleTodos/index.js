@@ -38,14 +38,32 @@ const initialTodosList = [
 ]
 
 class SimpleTodos extends Component {
+  state = {
+    pendingTodos: initialTodosList,
+  }
+
+  notCompletedTodos = id => {
+    const {pendingTodos} = this.state
+    const updatedList = pendingTodos.filter(todoItem => todoItem.id !== id)
+
+    this.setState({
+      pendingTodos: updatedList,
+    })
+  }
+
   render() {
+    const {pendingTodos} = this.state
     return (
       <div className="pg-bg">
         <div className="todos-container">
           <h1>Simple Todos</h1>
           <ul>
-            {initialTodosList.map(eachTodo => (
-              <TodoItem item={eachTodo} key={eachTodo.id} />
+            {pendingTodos.map(eachTodo => (
+              <TodoItem
+                item={eachTodo}
+                key={eachTodo.id}
+                deleteTodo={this.notCompletedTodos}
+              />
             ))}
           </ul>
         </div>

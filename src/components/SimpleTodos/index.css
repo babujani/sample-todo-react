@@ -5,15 +5,20 @@ h1 {
 }
 .todos-container {
   background-color: white;
-  width: 80%;
+  width: auto;
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  border-radius: 20px;
+  margin: 40px;
 }
 .pg-bg {
   background-color: #ffc2a0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }

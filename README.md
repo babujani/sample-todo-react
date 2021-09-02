@@ -1,5 +1,7 @@
 In this practice let's build a **Simple Todos** by applying the concepts we have learned till now.
 
+link to website: https://sampleTodoReact.ccbp.tech
+
 ### Refer to images below:
 
 <br/>
